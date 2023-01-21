@@ -1,0 +1,2 @@
+CREATE TABLE groupmessage(groupname VARCHAR(20),user VARCHAR(20),phonenumber INT(10),datetime DATETIME,message VARCHAR(100),viewList view ,sent BOOLEAN ,recieved BOOLEAN ,read BOOLEAN,starred BOOLEAN,istext BOOLEAN,ismedia BOOLEAN,isdocument BOOLEAN,messagereaction ENUM('THUMBSUP','LOVE','LAUGH','WOW','SAD','PRANAM'),PRIMARY KEY(phonenumber,datetime))
+CREATE TABLE view(user VARCHAR(20))

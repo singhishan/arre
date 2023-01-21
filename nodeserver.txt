@@ -1,0 +1,8 @@
+var http = require('http');
+
+//create a server object:
+http.createServer(function (req, res) {
+  res.write('select * from groupmessage;'); //write a response to the client
+  res.write('INSERT INTO groupmessage(groupname,user,phonenumber,message) VALUES('SEM2PLACMENT','ISHAN',7782908,'hii');')
+  res.end(); //end the response
+}).listen(3000); //the server object listens on port 3000
